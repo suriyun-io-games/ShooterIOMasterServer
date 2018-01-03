@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 114275136289712600}
   - component: {fileID: 114862474757605594}
   m_Layer: 5
-  m_Name: InGameUIWithMsf 1
+  m_Name: InGameUIWithMsf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2297,6 +2297,7 @@ MonoBehaviour:
   - {fileID: 1611724530198400}
   - {fileID: 1854655630228500}
   - {fileID: 1767642443935728}
+  - {fileID: 1125565243000132}
 --- !u!114 &114306762119516314
 MonoBehaviour:
   m_ObjectHideFlags: 1

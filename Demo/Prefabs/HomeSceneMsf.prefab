@@ -527,7 +527,7 @@ MonoBehaviour:
   LogLevel: 3
   SpawnControllerLogLevel: 4
   DefaultMachineIp: 127.0.0.1
-  DefaultExePath: ./Build.x86_64
+  DefaultExePath: ./Build.exe
   DefaultSpawnInBatchmode: 0
   MaxSpawnedProcesses: 0
   SpawnWebglServers: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
   KillProcessesWhenSpawnerQuits: 1
   AutoStartInEditor: 1
   OverrideExePathInEditor: 1
-  ExePathFromEditor: C:\Users\ITTIPON\Desktop\UnityBuilds\BattleIOMsf_Win32\Build.exe
+  ExePathFromEditor: C:\Users\Administrator\Desktop\UnityBuilds\ShooterIOWithMsf\Build.exe
 --- !u!114 &114951091878013040
 MonoBehaviour:
   m_ObjectHideFlags: 1

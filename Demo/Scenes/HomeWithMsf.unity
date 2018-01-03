@@ -802,11 +802,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114932510277083372, guid: 51443e351783108489c9f849eeadc3c6,
-        type: 2}
-      propertyPath: DefaultExePath
-      value: ./Build.exe
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51443e351783108489c9f849eeadc3c6, type: 2}
   m_IsPrefabParent: 0
