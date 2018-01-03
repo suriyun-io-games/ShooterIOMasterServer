@@ -1,0 +1,3 @@
+[submodule "IOGamesMasterServer"]
+	path = IOGamesMasterServer
+	url = https://github.com/insthync/IOGamesMasterServer.git
