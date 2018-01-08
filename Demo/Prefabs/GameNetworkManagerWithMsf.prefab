@@ -159,3 +159,5 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
+  roomName: 
+  gameRule: {fileID: 0}

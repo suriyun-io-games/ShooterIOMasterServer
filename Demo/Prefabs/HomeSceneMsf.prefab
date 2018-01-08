@@ -228,7 +228,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944962885699088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4016090235089246}
@@ -271,7 +271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1932546740067522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4016090235089246}
@@ -284,7 +284,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494566023766544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4016090235089246}
@@ -297,7 +297,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709227807492992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4016090235089246}
@@ -310,7 +310,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1517077760035434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4934938392711330}
@@ -350,7 +350,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1081959364391520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.99182, y: -177.72089, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4016090235089246}
@@ -488,14 +488,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfad770c2743dd46bfeca3db66d074b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
-    m_SceneAsset: {fileID: 102900000, guid: e8c3a1198fee2524dbb7ae789f2d58cc, type: 3}
-    m_SceneName: BattleWithMsf
-  roomName: Battle-
-  maxPlayers: 100
-  playersAmountToCreateNewRoom: 90
+  roomInfos:
+  - scene:
+      m_SceneAsset: {fileID: 102900000, guid: e8c3a1198fee2524dbb7ae789f2d58cc, type: 3}
+      m_SceneName: BattleWithMsf
+    roomName: Battle-
+    maxPlayers: 32
+    playersAmountToCreateNewRoom: 24
+    botCount: 3
+    gameRule: {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
+  - scene:
+      m_SceneAsset: {fileID: 102900000, guid: fa6d833f117703d429bd25390f343753, type: 3}
+      m_SceneName: OldBattleWithMsf
+    roomName: OldBattle-
+    maxPlayers: 32
+    playersAmountToCreateNewRoom: 24
+    botCount: 3
+    gameRule: {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
+  maps:
+  - mapName: Battle
+    scene:
+      m_SceneAsset: {fileID: 102900000, guid: e8c3a1198fee2524dbb7ae789f2d58cc, type: 3}
+      m_SceneName: BattleWithMsf
+    previewImage: {fileID: 21300000, guid: 772dad571d0052e41a70f6287c705d87, type: 3}
+    availableGameRules:
+    - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
+  - mapName: OldBattle
+    scene:
+      m_SceneAsset: {fileID: 102900000, guid: 15b5989d55d447a448eeecee6fc32d4b, type: 3}
+      m_SceneName: OldBattleWithMsf
+    previewImage: {fileID: 21300000, guid: 42d8e3e193236694392dd7139e4cac0c, type: 3}
+    availableGameRules:
+    - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
   countPlayersToCreateNewRoomDuration: 3
-  startPort: 1500
 --- !u!114 &114928463317033030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -535,7 +560,7 @@ MonoBehaviour:
   KillProcessesWhenSpawnerQuits: 1
   AutoStartInEditor: 1
   OverrideExePathInEditor: 1
-  ExePathFromEditor: C:\Users\Administrator\Desktop\UnityBuilds\ShooterIOWithMsf\Build.exe
+  ExePathFromEditor: C:\Users\ITTIPON\Desktop\UnityBuilds\BattleIOMsf_Win32\Build.exe
 --- !u!114 &114951091878013040
 MonoBehaviour:
   m_ObjectHideFlags: 1
