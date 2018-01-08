@@ -19,16 +19,4 @@ public class GameNetworkManagerWithMsf : GameNetworkManager
         GameplayManager.Singleton.characters.Remove(character);
         NetworkServer.DestroyPlayersForConnection(conn);
     }
-
-    public void StartHostButQuitIfCannotListen()
-    {
-        if (StartHost() == null)
-            Application.Quit();
-    }
-
-    public void StartServerButQuitIfCannotListen()
-    {
-        if (!StartServer())
-            Application.Quit();
-    }
 }
