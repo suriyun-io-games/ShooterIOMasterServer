@@ -15,8 +15,6 @@ public class GameNetworkManagerWithMsf : GameNetworkManager
         var ioGamesRoom = FindObjectOfType<IOGamesRoom>();
         if (ioGamesRoom != null)
             ioGamesRoom.ClientDisconnected(conn);
-        var character = conn.playerControllers[0].gameObject.GetComponent<CharacterEntity>();
-        GameplayManager.Singleton.characters.Remove(character);
-        NetworkServer.DestroyPlayersForConnection(conn);
+        DestroyPlayersForConnection(conn);
     }
 }
