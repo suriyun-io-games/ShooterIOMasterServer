@@ -498,7 +498,7 @@ MonoBehaviour:
     botCount: 3
     gameRule: {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
   - scene:
-      m_SceneAsset: {fileID: 102900000, guid: fa6d833f117703d429bd25390f343753, type: 3}
+      m_SceneAsset: {fileID: 102900000, guid: 15b5989d55d447a448eeecee6fc32d4b, type: 3}
       m_SceneName: OldBattleWithMsf
     roomName: OldBattle-
     maxPlayers: 32
