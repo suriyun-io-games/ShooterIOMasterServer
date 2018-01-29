@@ -513,6 +513,7 @@ MonoBehaviour:
     previewImage: {fileID: 21300000, guid: 772dad571d0052e41a70f6287c705d87, type: 3}
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
+    - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
   - mapName: OldBattle
     scene:
       m_SceneAsset: {fileID: 102900000, guid: 15b5989d55d447a448eeecee6fc32d4b, type: 3}
@@ -520,6 +521,7 @@ MonoBehaviour:
     previewImage: {fileID: 21300000, guid: 42d8e3e193236694392dd7139e4cac0c, type: 3}
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
+    - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
   countPlayersToCreateNewRoomDuration: 3
 --- !u!114 &114928463317033030
 MonoBehaviour:
@@ -560,7 +562,7 @@ MonoBehaviour:
   KillProcessesWhenSpawnerQuits: 1
   AutoStartInEditor: 1
   OverrideExePathInEditor: 1
-  ExePathFromEditor: C:\Users\ITTIPON\Desktop\UnityBuilds\BattleIOMsf_Win32\Build.exe
+  ExePathFromEditor: C:\Users\ITTIPON\Desktop\UnityBuilds\ShooterIOMsf_Win32\Build.exe
   startPort: 1500
 --- !u!114 &114951091878013040
 MonoBehaviour:
