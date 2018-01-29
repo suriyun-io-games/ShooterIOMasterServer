@@ -17,4 +17,16 @@ public class GameNetworkManagerWithMsf : GameNetworkManager
             ioGamesRoom.ClientDisconnected(conn);
         DestroyPlayersForConnection(conn);
     }
+
+    public override void OnStopServer()
+    {
+        base.OnStopServer();
+        StartCoroutine(ApplicationCloseRoutine());
+    }
+
+    IEnumerator ApplicationCloseRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        Application.Quit();
+    }
 }
