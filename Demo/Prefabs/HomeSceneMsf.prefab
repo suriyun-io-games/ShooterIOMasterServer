@@ -522,6 +522,13 @@ MonoBehaviour:
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
+  - mapName: BattleRoyale
+    scene:
+      m_SceneAsset: {fileID: 102900000, guid: d71b97601dcb320419fa88e3c9cb631e, type: 3}
+      m_SceneName: BattleRoyaleWithMsf
+    previewImage: {fileID: 21300000, guid: ca834b49572e8cc429017ced8b475ca4, type: 3}
+    availableGameRules:
+    - {fileID: 11400000, guid: 0234e85440771e949ad2dac54f983d14, type: 2}
   countPlayersToCreateNewRoomDuration: 3
 --- !u!114 &114928463317033030
 MonoBehaviour:
