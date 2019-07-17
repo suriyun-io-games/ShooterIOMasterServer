@@ -5026,7 +5026,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1296495754}
   m_LocalRotation: {x: 0.25881907, y: 0, z: 0, w: 0.9659259}
-  m_LocalPosition: {x: 0, y: 4.25, z: -6.732051}
+  m_LocalPosition: {x: 0, y: 3.7500002, z: -6.0621777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5043,17 +5043,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f728177e7e400947abc4db638db136d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1296495758}
   target: {fileID: 722984679}
-  targetOffset: {x: 0, y: 3.25, z: -5}
+  targetOffset: {x: 0, y: 0.25, z: -5}
   damping: 65
+  dontSmoothFollow: 0
+  lookAtDamping: 2
+  dontSmoothLookAt: 0
   xRotation: 30
   yRotation: 0
   useTargetYRotation: 0
   zoomDistance: 2
   zoomByAspectRatio: 0
-  zoomByAspectRatioWidth: 0
-  zoomByAspectRatioHeight: 0
-  zoomByAspectRatioMin: 0
+  zoomByAspectRatioSettings:
+  - width: 16
+    height: 9
+    zoomDistance: 0.0001
+  - width: 16
+    height: 10
+    zoomDistance: 1.75
+  - width: 3
+    height: 2
+    zoomDistance: 3
+  - width: 4
+    height: 3
+    zoomDistance: 5.5
+  - width: 5
+    height: 4
+    zoomDistance: 7
+  enableWallHitSpring: 0
+  wallHitLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  wallHitQueryTriggerInteraction: 1
 --- !u!1 &1308529956
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,6 +6766,11 @@ Prefab:
     - target: {fileID: 1822598244391232, guid: c77dff26fe030dc4c99583ee0798531c, type: 2}
       propertyPath: m_Name
       value: SelectWeaponDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 224299956733847648, guid: c77dff26fe030dc4c99583ee0798531c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c77dff26fe030dc4c99583ee0798531c, type: 2}

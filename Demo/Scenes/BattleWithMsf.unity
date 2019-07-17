@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1334,6 +1335,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1345,7 +1347,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 986428575}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 16, y: 30.071068, z: -55.071068}
+  m_LocalPosition: {x: 16, y: 28.485281, z: -54.485283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1362,17 +1364,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f728177e7e400947abc4db638db136d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetCamera: {fileID: 986428579}
   target: {fileID: 1950779567}
-  targetOffset: {x: 0, y: 3, z: -2}
+  targetOffset: {x: 0, y: 0, z: -2}
   damping: 65
+  dontSmoothFollow: 0
+  lookAtDamping: 2
+  dontSmoothLookAt: 0
   xRotation: 45
   yRotation: 0
   useTargetYRotation: 0
   zoomDistance: 10
   zoomByAspectRatio: 0
-  zoomByAspectRatioWidth: 0
-  zoomByAspectRatioHeight: 0
-  zoomByAspectRatioMin: 0
+  zoomByAspectRatioSettings:
+  - width: 16
+    height: 9
+    zoomDistance: 0.0001
+  - width: 16
+    height: 10
+    zoomDistance: 1.75
+  - width: 3
+    height: 2
+    zoomDistance: 3
+  - width: 4
+    height: 3
+    zoomDistance: 5.5
+  - width: 5
+    height: 4
+    zoomDistance: 7
+  enableWallHitSpring: 0
+  wallHitLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  wallHitQueryTriggerInteraction: 1
 --- !u!1001 &1077572797
 Prefab:
   m_ObjectHideFlags: 0
